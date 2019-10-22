@@ -1,0 +1,43 @@
+{
+    "name": "waynebrummer/schedule-list",
+    "description": "List when scheduled commands are executed.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "laravel",
+        "schedules",
+        "commands",
+        "console"
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0",
+        "orchestra/testbench": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pace\\ScheduleList\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pace\\ScheduleList\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Pace\\ScheduleList\\ServiceProvider"
+            ]
+        }
+    }
+}
